@@ -15,11 +15,16 @@ const variants = {
       duration: duration,
       delay: duration,
       when: 'beforeChildren',
+      staggerChildren: 0.1,
     },
   },
   exit: {
     opacity: 0,
-    transition: { duration: duration },
+    transition: {
+      duration: duration,
+      when: 'afterChildren',
+      staggerChildren: 0.05,
+    },
   },
 }
 
@@ -33,7 +38,7 @@ const Layout = ({ children, location }) => (
         padding: `1em`,
       }}
     >
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         <motion.main
           key={location.pathname}
           variants={variants}
