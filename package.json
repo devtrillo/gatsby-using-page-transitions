@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Ryan Wiemer <https://www.ryanwiemer.com>",
   "dependencies": {
-    "framer-motion": "^1.6.3",
+    "framer-motion": "^2.6.6",
     "gatsby": "^2.14.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
